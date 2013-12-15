@@ -57,7 +57,6 @@ class AppDelegate
           @last_view.alpha = 0
           @last_view.backgroundColor = UIColor.redColor
           other_views.each do |view|
-            #NEED CLARIFICATION ON WHAT'S HAPPENING
             next if view == @last_view
             view.frame = CGRect.new(
               [view.frame.origin.x,
@@ -71,5 +70,4 @@ class AppDelegate
           })
     end
   end
-
 end
